@@ -36,5 +36,5 @@ matching = max_weight_matching(g)
 
 labels2 = [2 * w for e, w in nx.get_edge_attributes(g, 'weight').items() if e in matching]
 
-nx.draw_networkx_edges(g, pos=p, edgelist=matching, width=labels2, edge_color='red', style='-')
+nx.draw_networkx_edges(g, pos=p, edgelist=matching, width=labels2, edge_color='red')
 plt.show()
